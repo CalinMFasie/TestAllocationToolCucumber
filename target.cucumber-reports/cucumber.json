@@ -1,0 +1,206 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-17T12:33:00.529Z",
+        "line": 9,
+        "name": "Open and run app",
+        "description": "",
+        "id": "add-new-employee;open-and-run-app;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4471000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is logged in",
+            "match": {
+              "location": "StepDefinitions.AllocationToolStepDefs.TestUserIsLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2761000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add new Employee with Name as \"Calin Marcel\" email as \"calin@marcel.ro\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Calin Marcel\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"calin@marcel.ro\"",
+                  "offset": 54
+                }
+              ],
+              "location": "StepDefinitions.AllocationToolStepDefs.TestAddNewEmployee(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-17T12:33:07.796Z",
+        "line": 10,
+        "name": "Open and run app",
+        "description": "",
+        "id": "add-new-employee;open-and-run-app;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2801000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is logged in",
+            "match": {
+              "location": "StepDefinitions.AllocationToolStepDefs.TestUserIsLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2741000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add new Employee with Name as \"Paul Georgescu\" email as \"paul@georgescu.ro\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Paul Georgescu\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"paul@georgescu.ro\"",
+                  "offset": 56
+                }
+              ],
+              "location": "StepDefinitions.AllocationToolStepDefs.TestAddNewEmployee(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-17T12:33:13.344Z",
+        "line": 11,
+        "name": "Open and run app",
+        "description": "",
+        "id": "add-new-employee;open-and-run-app;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2993000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is logged in",
+            "match": {
+              "location": "StepDefinitions.AllocationToolStepDefs.TestUserIsLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2632000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add new Employee with Name as \"John Black\" email as \"john@black.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"John Black\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"john@black.com\"",
+                  "offset": 52
+                }
+              ],
+              "location": "StepDefinitions.AllocationToolStepDefs.TestAddNewEmployee(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Add new Employee",
+    "description": "",
+    "id": "add-new-employee",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/2AddEmployee.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-17T12:33:18.973Z",
+        "line": 3,
+        "name": "Edit employees",
+        "description": "",
+        "id": "edit-employees;edit-employees",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3821000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Edit employee",
+            "match": {
+              "location": "StepDefinitions.AllocationToolStepDefs.TestEditEmployee()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 534000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Delete employee",
+            "match": {
+              "location": "StepDefinitions.AllocationToolStepDefs.TestDeleteEmployee()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 398000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is logged out",
+            "match": {
+              "location": "StepDefinitions.AllocationToolStepDefs.TestLogout()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Edit employees",
+    "description": "",
+    "id": "edit-employees",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/3EditEmployee.feature",
+    "tags": []
+  }
+]
