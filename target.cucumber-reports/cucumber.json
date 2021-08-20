@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-08-17T12:33:00.529Z",
+        "start_timestamp": "2021-08-20T13:42:23.736Z",
         "line": 9,
         "name": "Open and run app",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4471000000,
+              "duration": 4493000000,
               "status": "passed"
             },
             "line": 4,
@@ -25,11 +25,11 @@
           },
           {
             "result": {
-              "duration": 2761000000,
+              "duration": 1945000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "Add new Employee with Name as \"Calin Marcel\" email as \"calin@marcel.ro\"",
+            "name": "Add new Employee with Name as \"Calin Marcel\" email as \"calin@marcel.ro\" supervisor as \"Manager\" workingHours as \"8\" startDate as \"08.01.2021\" endDate as \"08.02.2021\"",
             "match": {
               "arguments": [
                 {
@@ -39,16 +39,32 @@
                 {
                   "val": "\"calin@marcel.ro\"",
                   "offset": 54
+                },
+                {
+                  "val": "\"Manager\"",
+                  "offset": 86
+                },
+                {
+                  "val": "\"8\"",
+                  "offset": 112
+                },
+                {
+                  "val": "\"08.01.2021\"",
+                  "offset": 129
+                },
+                {
+                  "val": "\"08.02.2021\"",
+                  "offset": 153
                 }
               ],
-              "location": "StepDefinitions.AllocationToolStepDefs.TestAddNewEmployee(java.lang.String,java.lang.String)"
+              "location": "StepDefinitions.AllocationToolStepDefs.TestAddNewEmployee(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-08-17T12:33:07.796Z",
+        "start_timestamp": "2021-08-20T13:42:30.210Z",
         "line": 10,
         "name": "Open and run app",
         "description": "",
@@ -58,7 +74,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2801000000,
+              "duration": 2860000000,
               "status": "passed"
             },
             "line": 4,
@@ -70,56 +86,11 @@
           },
           {
             "result": {
-              "duration": 2741000000,
+              "duration": 1965000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "Add new Employee with Name as \"Paul Georgescu\" email as \"paul@georgescu.ro\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Paul Georgescu\"",
-                  "offset": 30
-                },
-                {
-                  "val": "\"paul@georgescu.ro\"",
-                  "offset": 56
-                }
-              ],
-              "location": "StepDefinitions.AllocationToolStepDefs.TestAddNewEmployee(java.lang.String,java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-08-17T12:33:13.344Z",
-        "line": 11,
-        "name": "Open and run app",
-        "description": "",
-        "id": "add-new-employee;open-and-run-app;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2993000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is logged in",
-            "match": {
-              "location": "StepDefinitions.AllocationToolStepDefs.TestUserIsLoggedIn()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2632000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Add new Employee with Name as \"John Black\" email as \"john@black.com\"",
+            "name": "Add new Employee with Name as \"John Black\" email as \"john@black.com\" supervisor as \"Team leader\" workingHours as \"6\" startDate as \"08.02.2021\" endDate as \"08.03.2021\"",
             "match": {
               "arguments": [
                 {
@@ -129,9 +100,86 @@
                 {
                   "val": "\"john@black.com\"",
                   "offset": 52
+                },
+                {
+                  "val": "\"Team leader\"",
+                  "offset": 83
+                },
+                {
+                  "val": "\"6\"",
+                  "offset": 113
+                },
+                {
+                  "val": "\"08.02.2021\"",
+                  "offset": 130
+                },
+                {
+                  "val": "\"08.03.2021\"",
+                  "offset": 154
                 }
               ],
-              "location": "StepDefinitions.AllocationToolStepDefs.TestAddNewEmployee(java.lang.String,java.lang.String)"
+              "location": "StepDefinitions.AllocationToolStepDefs.TestAddNewEmployee(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-20T13:42:35.048Z",
+        "line": 11,
+        "name": "Open and run app",
+        "description": "",
+        "id": "add-new-employee;open-and-run-app;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2725000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is logged in",
+            "match": {
+              "location": "StepDefinitions.AllocationToolStepDefs.TestUserIsLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2015000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add new Employee with Name as \"Jack Smith\" email as \"jack@smith.com\" supervisor as \"Unit manager\" workingHours as \"4\" startDate as \"08.01.2021\" endDate as \"08.02.2021\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jack Smith\"",
+                  "offset": 30
+                },
+                {
+                  "val": "\"jack@smith.com\"",
+                  "offset": 52
+                },
+                {
+                  "val": "\"Unit manager\"",
+                  "offset": 83
+                },
+                {
+                  "val": "\"4\"",
+                  "offset": 114
+                },
+                {
+                  "val": "\"08.01.2021\"",
+                  "offset": 131
+                },
+                {
+                  "val": "\"08.02.2021\"",
+                  "offset": 155
+                }
+              ],
+              "location": "StepDefinitions.AllocationToolStepDefs.TestAddNewEmployee(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -142,51 +190,155 @@
     "description": "",
     "id": "add-new-employee",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/2AddEmployee.feature",
+    "uri": "file:src/test/resources/features/1AddEmployee.feature",
     "tags": []
   },
   {
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-08-17T12:33:18.973Z",
-        "line": 3,
+        "start_timestamp": "2021-08-20T13:42:39.794Z",
+        "line": 9,
         "name": "Edit employees",
         "description": "",
-        "id": "edit-employees;edit-employees",
+        "id": "edit-employees;edit-employees;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4540000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Edit Employee with Name as \"Modified User\" email as \"modified@user.ro\" supervisor as \"CEO\" workingHours as \"16\" startDate as \"08.01.2021\" endDate as \"08.02.2021\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Modified User\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"modified@user.ro\"",
+                  "offset": 52
+                },
+                {
+                  "val": "\"CEO\"",
+                  "offset": 85
+                },
+                {
+                  "val": "\"16\"",
+                  "offset": 107
+                },
+                {
+                  "val": "\"08.01.2021\"",
+                  "offset": 125
+                },
+                {
+                  "val": "\"08.02.2021\"",
+                  "offset": 149
+                }
+              ],
+              "location": "StepDefinitions.AllocationToolStepDefs.TestEditEmployee(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Edit employees",
+    "description": "",
+    "id": "edit-employees",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/2EditEmployee.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-20T13:42:44.345Z",
+        "line": 3,
+        "name": "Delete employee",
+        "description": "",
+        "id": "delete-employee;delete-employee",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 3821000000,
+              "duration": 2018000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "Edit employee",
-            "match": {
-              "location": "StepDefinitions.AllocationToolStepDefs.TestEditEmployee()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 534000000,
-              "status": "passed"
-            },
-            "line": 7,
             "name": "Delete employee",
             "match": {
               "location": "StepDefinitions.AllocationToolStepDefs.TestDeleteEmployee()"
             },
             "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Delete employee",
+    "description": "",
+    "id": "delete-employee",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/3DeleteUser.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-20T13:42:46.369Z",
+        "line": 11,
+        "name": "Add new project",
+        "description": "",
+        "id": "add-new-project;add-new-project;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: Project was not added\n\tat org.testng.Assert.fail(Assert.java:99)\n\tat StepDefinitions.AllocationToolStepDefs.TestAddNewProject(AllocationToolStepDefs.java:187)\n\tat ✽.Add new project with Name as \"AutonomousLogan\" client as \"Dacia\" startDate as \"08.01.2021\" endDate as \"08.02.2021\" description as \"Logan autonomous\"(file:///home/calinfasie/IdeaProjects/TestAllocationToolCucumber/src/test/resources/features/4ProjectAddNew.feature:5)\n",
+              "duration": 2068000000,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "Add new project with Name as \"AutonomousLogan\" client as \"Dacia\" startDate as \"08.01.2021\" endDate as \"08.02.2021\" description as \"Logan autonomous\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AutonomousLogan\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"Dacia\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"08.01.2021\"",
+                  "offset": 78
+                },
+                {
+                  "val": "\"08.02.2021\"",
+                  "offset": 102
+                },
+                {
+                  "val": "\"Logan autonomous\"",
+                  "offset": 130
+                }
+              ],
+              "location": "StepDefinitions.AllocationToolStepDefs.TestAddNewProject(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
           },
           {
             "result": {
-              "duration": 398000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 9,
+            "line": 7,
             "name": "User is logged out",
             "match": {
               "location": "StepDefinitions.AllocationToolStepDefs.TestLogout()"
@@ -196,11 +348,11 @@
         ]
       }
     ],
-    "name": "Edit employees",
+    "name": "Add new project",
     "description": "",
-    "id": "edit-employees",
+    "id": "add-new-project",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/3EditEmployee.feature",
+    "uri": "file:src/test/resources/features/4ProjectAddNew.feature",
     "tags": []
   }
 ]

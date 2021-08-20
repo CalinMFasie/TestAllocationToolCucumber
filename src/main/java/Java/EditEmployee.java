@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 @Getter
 public class EditEmployee {
     private WebDriver driver;
@@ -14,6 +15,9 @@ public class EditEmployee {
 
     @FindBy(xpath = "(//td[@role='cell'][contains(.,'Calin Marcel')])[1]")
     private WebElement insertedName;
+
+    @FindBy(xpath = "(//td[@role='cell'][contains(.,'Modified User')])[1]")
+    private WebElement modifiedName;
 
     @FindBy(xpath = "//input[@formcontrolname='email']")
     private WebElement email;
@@ -33,13 +37,15 @@ public class EditEmployee {
     @FindBy(xpath = "//span[@class='mat-checkbox-inner-container']")
     private WebElement active;
 
-    @FindBy(xpath = "//div[@class='mat-form-field-infix ng-tns-c72-28'][contains(.,'Working hours')]")
+    //    @FindBy(xpath = "//div[@class='mat-form-field-infix ng-tns-c72-28'][contains(.,'Working hours')]")
+    @FindBy(xpath = "//input[contains(@formcontrolname,'workingHours')]")
     private WebElement workingHours;
 
     @FindBy(xpath = "//input[contains(@type,'number')]")
     private WebElement scrollWorkingHours;
 
-    @FindBy(xpath = "//input[@formcontrolname='startDate']")
+    //    @FindBy(xpath = "//input[@formcontrolname='startDate']")
+    @FindBy(xpath = "//input[contains(@formcontrolname,'startDate')]")
     private WebElement startDate;
 
     @FindBy(xpath = "//input[@formcontrolname='endDate']")
@@ -51,5 +57,29 @@ public class EditEmployee {
     public EditEmployee(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
+    }
+
+    public void setName(String employee) {
+        name.sendKeys(employee);
+    }
+
+    public void setEmail(String emailL) {
+        email.sendKeys(emailL);
+    }
+
+    public void setSupervisor(String supervisor1) {
+        supervisor.sendKeys(supervisor1);
+    }
+
+    public void setStartDate(String startDate1) {
+        startDate.sendKeys(startDate1);
+    }
+
+    public void setEndDate(String endDate1) {
+        endDate.sendKeys(endDate1);
+    }
+
+    public void setWorkingHours(String hours) {
+        workingHours.sendKeys(hours);
     }
 }
